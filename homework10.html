@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width:200px;
+			height:200px;
+			background:#ccc;
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			transform:rotate(0deg);
+			-webkit-transition:1s all ease;
+			transition:1s all ease;
+		}
+	</style>
+	<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded',function(){
+		var oDiv = document.getElementById('div');
+		oDiv.onclick=function(){
+			this.style.WebkitTransform='rotate(120deg)';
+			this.style.MozTransform='rotate(120deg)'
+			this.style.msTransform='rotate(120deg)';
+			this.style.OTransform='rotate(120deg)';
+			this.style.transform='rotate(120deg)';
+		};
+	},false);
+	</script>
+</head>
+<body>
+	<div id="div"></div>
+</body>
+</html>
